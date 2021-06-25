@@ -1,6 +1,6 @@
 # JsTutorial
 #  Day 1 Assignmet
-   1-Write a program that calculate the area of Circle?
+   1 Write a program that calculate the area of Circle?
    2-Write a program that calculate the area of Square?
    3-Write a program that calculate the area of Rectangle?
    4-Write a program that calculate the US dollar conversion to Pakistan Rupee?
