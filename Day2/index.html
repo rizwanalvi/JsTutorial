@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day 2</h1>
+    <input type="color" value="" id="colorpick">
+    <input type="text" name="" id="txtData">
+    <select name="" id="lstfruit" multiple>
+        <option value="Apple">Apple</option>
+        <option value="mango">mango</option>
+        <option value="orange">orange</option>
+        <option value="pineapple">pineapple</option>
+    </select>
+    
+   
+    <script>
+        let lstfruit =document.getElementById("lstfruit");
+        lstfruit.addEventListener("click",function(){
+            alert(this.value);
+        });
+        
+      let colorpick = document.getElementById("colorpick"); 
+     colorpick.addEventListener("change",function(){
+        document.body.style.backgroundColor =this.value;
+            //  alert(colorpick.value);
+     });
+   let num =0;
+     let txtData = document.getElementById("txtData");
+     txtData.addEventListener("change",function(){
+              alert( this.value); 
+            
+     });
+   
+
+
+
+   
+     //  let txtData = document.getElementById("txtData");
+
+    //  txtData.addEventListener("change",function(){
+    //         alert('textbox click');
+    //  });
+     
+        // let productname = "Milk Pack";
+        // let quantity = 0;
+        // let price = 23.5;
+        // let totalprice = 0;
+        // // quantity = prompt("Enter Number of items");
+        // totalprice = quantity * price;
+        // document.write(totalprice);
+    </script>
+</body>
+</html>
