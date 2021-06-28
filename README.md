@@ -1,12 +1,12 @@
 # JsTutorial
-#  Day 1 Assigment
+#  Day 1 Assignment
    1.   Write a program that calculate the area of Circle?
    2.   Write a program that calculate the area of Square?
    3.   Write a program that calculate the area of Rectangle?
    4.   Write a program that calculate the US dollar conversion to Pakistan Rupee?
    5.   **Challenge – Temperature conversion** 
   
-# Day 2 Assigment
+# Day 2 Assignment
    1. Practice Event Binding with Html Controls
    2. Change page background color with color picker control
    3. Read Data from Input Text Control on Change event
