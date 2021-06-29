@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+</style>
+<body>
+    <h1>Light Bulb</h1>
+        <img src="img/pic_bulboff.gif" alt="" id="img">
+        <input type="button" name="" id="btnOn" value="On">
+        <input type="button" name="" id="btnOff" value="Off">
+
+        <script>
+            let btnOn = document.getElementById('btnOn');
+            let img = document.getElementById('img');
+            let btnOff = document.getElementById('btnOff');
+            btnOn.addEventListener("click",function(){
+             //       document.body.style.backgroundImage = "url(img/pic_bulbon.gif)"
+                    img.setAttribute("src","img/pic_bulbon.gif");
+            });
+            btnOff.addEventListener("click",function(){
+           //     document.body.style.backgroundImage = "url(img/pic_bulboff.gif)"
+                    img.setAttribute("src","img/pic_bulboff.gif");
+
+            });
+        </script>
+</body>
+</html>
