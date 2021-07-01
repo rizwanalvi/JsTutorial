@@ -1,0 +1,21 @@
+.bg-warning{
+    background-color: orange;
+}
+#btnClick:hover{
+    cursor: crosshair;
+}
+.bg-warning:hover{
+    cursor: not-allowed !important;
+}
+
+ul{
+    width:10%;
+}
+li{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+    border: solid 1px;
+    cursor:grab;
+
+}

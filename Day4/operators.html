@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <input type="button" id="btnclick" value="Assignment Operator" class="btn btn-success">
+    <br/>
+    <input type="button" id="btnAdd" value="Check Data">
+    <br/>
+    <input type="button" id="btnComp" value="Compare">
+    <h1 id="h1">0</h1>
+    
+    <script>
+        let btnclick = document.getElementById('btnclick');
+        let btnAdd = document.getElementById('btnAdd');
+        let btnComp = document.getElementById('btnComp');
+      let h1 = document.getElementById('h1');
+        let x=3;
+        let result=0;
+        btnAdd.addEventListener("click",function(){
+        result = x**2;
+      //  result = x^2;
+    
+        h1.innerHTML = result;
+
+        });
+        btnclick.addEventListener("click",function(){
+            x +=2; // x = x +2;
+            // x %= 2; x = x%2 //Assignment
+            //x += 2;//Assignment
+            //x -= 2;//Assignment
+            //x *= 2;//Assignment
+            //x /= 2;//Assignment
+          //  x /= 2;//Assignment
+            
+            h1.innerHTML = x;
+
+        });
+
+        let a=10;
+        let b="9";
+        btnComp.addEventListener("click",function(){
+            // a>b
+            //a<b
+            //a == b
+            // a != b
+            h1.setAttribute('class','bg-warning');
+            h1.innerHTML = a != b;
+
+
+        });
+
+    </script>
+</body>
+</html>
