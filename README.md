@@ -22,5 +22,15 @@
    3. Change Button value on Button Click
    4. Change Button css on Button Click
    5. Light Bulb Example 
+# Day 5 Assignment
+## Working with if Statement
+   1. Write a programme that check the number is positive or negative.
+   2. Write a program that check the number is divisible by 5.
+   3. Write a program that check the number is even or odd.
+   4. Write a program of flip-flop circuit. (on-off logic).
+  
+
+
+
 # Donation Kindly Update  images Here
 [Upload Drive Link](https://drive.google.com/drive/folders/1QjNzaIiwLu0a5mOQ3nz9XGkB9H6gBQB2?usp=sharing)
