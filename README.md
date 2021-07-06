@@ -29,6 +29,13 @@
    3. Write a program that check the number is even or odd.
    4. Write a program of flip-flop circuit. (on-off logic).
   
+# Day 6 Assignment
+## Working with if Statement
+   1. Generate Random Number between 1 to 100
+   2. Chnage Background Color on page resfresh using if- else  if with random number.
+   3. Change Background Color on every 2 sec.
+   4. Image Slider - Change Background images on every 2 sec
+   4. Bulb on off program using flip-flop circuit. (on-off logic) wiht button control.
 
 
 
