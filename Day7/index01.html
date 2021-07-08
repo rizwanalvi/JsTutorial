@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c637592d13.js" crossorigin="anonymous"></script>
+<Style>
+    i{
+        font-size: 20rem;
+    }
+</Style>
+</head>
+<body>
+    <i class="fas fa-apple-alt" id="btnd"></i>
+
+    <script>
+        let i = document.getElementById('btnd');
+        i.addEventListener("click",function () { 
+          //i.remove();
+             i.classList.remove("fas","fa-apple-alt");
+             i.classList.add("fab","fa-apple");
+         });
+    </script>
+</body>
+</html>
