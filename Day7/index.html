@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input{
+            height: 150px;
+            width: 150px;
+            font-size: 40px;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+        <input type="button" id="A1" >    
+        <input type="button" id="A2" >    
+        <input type="button" id="A3" >    
+</div>  
+<div class="box">
+    <input type="button" id="B1" >    
+    <input type="button" id="B2" >    
+    <input type="button" id="B3" >    
+</div>  
+<div class="box">
+    <input type="button" id="C1" >    
+    <input type="button" id="C2" >    
+    <input type="button" id="C3" >    
+</div>  
+    <script>
+let A1 = document.getElementById("A1");
+let A2 = document.getElementById("A2");
+let A3 = document.getElementById("A3");
+let B1 = document.getElementById("B1");
+let B2 = document.getElementById("B2");
+let B3 = document.getElementById("B3");
+let C1 = document.getElementById("C1");
+let C2 = document.getElementById("C2");
+let C3 = document.getElementById("C3");
+let flag = true;
+A1.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+
+});
+
+A2.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+
+A3.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+   
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+   
+}
+
+});
+
+B1.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+
+B2.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+B3.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+C1.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+C2.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+C3.addEventListener("click",function(){
+    if(flag){
+    this.value="X";
+    this.setAttribute("disabled",true);
+    flag=false;
+    Winner();
+}
+else{
+    this.value="O";
+    flag=true;
+    this.setAttribute("disabled",true);
+    Winner();
+}
+
+});
+function Winner() { 
+  
+if(A1.value == A2.value){
+    if(A2.value == A3.value ){
+        alert('');
+    }
+}
+
+//vertical rules
+if(A1.value == B1.value){
+    if(B1.value == C1.value){
+        if(A1.getAttribute("disabled")){
+            alert('');
+        }
+    }
+}
+
+if(A2.value == B2.value){
+    if(B2.value == C2.value){
+        if(A2.getAttribute("disabled")){
+            alert('');
+        }
+    }
+}
+if(A3.value == B3.value){
+    if(B3.value == C3.value){
+        if(A3.getAttribute("disabled")){
+            alert('');
+        }
+    }
+}
+//Digonal Rules
+if(A1.value == B2.value){
+    if(B2.value == C3.value){
+        if(A1.getAttribute("disabled")){
+            alert('');
+        }
+    }
+}
+if(A3.value == B2.value){
+    if(B2.value == C1.value){
+        if(A3.getAttribute("disabled")){
+            alert('');
+        }
+    }
+}
+ }
+    </script>
+</body>
+</html>
