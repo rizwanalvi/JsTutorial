@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="keyboard-base">
+        <div class="key" id="Backquote">~</div>
+        <div class="key" >1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">+</div>
+        <div class="key delete">Delete</div>
+        <div class="key tab">Tab</div>
+        <div class="key" id="KeyQ">Q</div>
+        <div class="key" id="KeyW">w</div>
+        <div class="key" id="KeyE">E</div>
+        <div class="key" id="KeyR">R</div>
+        <div class="key" id="KeyT">T</div>
+        <div class="key" id="KeyY">Y</div>
+        <div class="key" id="KeyU">U</div>
+        <div class="key" id="KeyI">I</div>
+        <div class="key" id="KeyO">O</div>
+        <div class="key" id="KeyP">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key backslash">\</div>
+        <div class="key capslock">CapsLock</div>
+        <div class="key" id="KeyA">A</div>
+        <div class="key" id="KeyS">S</div>
+        <div class="key" id="KeyD">D</div>
+        <div class="key" id="KeyF">F</div>
+        <div class="key" id="KeyG">G</div>
+        <div class="key" id="KeyH">H</div>
+        <div class="key" id="KeyJ">J</div>
+        <div class="key" id="KeyK">K</div>
+        <div class="key" id="KeyL">L</div>
+        <div class="key" id="Key;">;</div>
+        <div class="key" id="Key'">'</div>
+        <div class="key return">Return</div>
+        <div class="key leftshift">Shift</div>
+        <div class="key" id="KeyZ">Z</div>
+        <div class="key" id="KeyX">X</div>
+        <div class="key" id="KeyC">C</div>
+        <div class="key" id="KeyV">V</div>
+        <div class="key" id="KeyB">B</div>
+        <div class="key" id="KeyN">N</div>
+        <div class="key" id="KeyM">M</div>
+        <div class="key" id="Key,">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key rightshift">Shift</div>
+        <div class="key leftctrl">Ctrl</div>
+        <div class="key">Alt</div>
+        <div class="key command">Command</div>
+        <div class="key space">Space</div>
+        <div class="key command">command</div>
+        <div class="key">Alt</div>
+        <div class="key" id="ControlRight">Ctrl</div>
+        <div class="key">Fn</div>
+    </div>
+    <script>
+      document.addEventListener("keydown",function(event){
+      let Keys = document.getElementById(event.code);
+            KeyCheck(Keys)
+      });
+      
+      function KeyCheck(obj){
+        obj.classList.remove("key");
+        obj.classList.add("keyDown");
+      }
+    </script>
+</body>
+</html>
