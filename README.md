@@ -37,7 +37,9 @@
    4. Image Slider - Change Background images on every 2 sec
    4. Bulb on off program using flip-flop circuit. (on-off logic) wiht button control.
 
-# <script src="https://kit.fontawesome.com/c637592d13.js" crossorigin="anonymous"></script>
+# Day 9 Assignment
+   1. JavaScript KeyBoard Testing Application
+ <script src="https://kit.fontawesome.com/c637592d13.js" crossorigin="anonymous"></script>
 
 # Donation Kindly Update  images Here
 [Upload Drive Link](https://drive.google.com/drive/folders/1QjNzaIiwLu0a5mOQ3nz9XGkB9H6gBQB2?usp=sharing)
