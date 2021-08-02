@@ -31,17 +31,18 @@
         }
         .bullet{
             position: absolute;
-            height: 10px;
-            width: 10px;
+            height: 20px;
+            width: 20px;
             border-radius: 5px;
             bottom: 0;
-            right: 0;
+            left: -2000;
             background-color: red;
             animation: fire 2s linear infinite;
+            transition: ease-in-out;
         }
         @keyframes fire {
             from{right: 0px;}
-            to{right: 1200px;}
+            to{right: 3000px;}
         }
     </style>
 </head>
@@ -51,25 +52,56 @@
         <div class="bullet"></div>
        
     </div>
+    
     <script>
+        /*
+        left = x
+        top = y
+        right = x+width
+        bottom  = y+height
+        */
+       let screen= document.querySelector('.screen');
         let obj = document.getElementById("obj");
+        // let bullet = document.getElementById("bullet");
+        let bullet = document.querySelector('.bullet');
        let move=0;
         document.addEventListener("keydown",function(event){
-            if(event.code == "KeyS"){
+            // console.log(event.code)
+            if(event.code == "ArrowUp"){
             obj.classList.add("jump");
             setTimeout(function(){
                 obj.classList.remove("jump");
             },1000)
         }
-        if(event.code == "KeyA"){
+        if(event.code == "ArrowRight"){
             move +=3;
             obj.style.left =`${move}px`;
         }
-        if(event.code == "KeyD"){
+        if(event.code == "ArrowLeft"){
             move -=2;
             obj.style.left =`${move}px`;
         }
         })
+
+        setInterval(function(){
+            let bullet_position = window.getComputedStyle(bullet); //rect2
+            let obj_position = window.getComputedStyle(obj); //rect 1
+            let obscreen = window.getComputedStyle(screen);
+       
+            let pleft =  parseInt(obj_position.left,10);
+            let pright =  parseInt(obj_position.right,10); 
+            let pbottom =parseInt(obj_position.bottom,10);
+            let ptop =parseInt(obj_position.top,10);
+
+            let pcleft =  parseInt(bullet_position.left,10);
+            let pcright =  parseInt(bullet_position.right,10); 
+            let pcbottom =parseInt(bullet_position.bottom,10);
+            let pctop =parseInt(bullet_position.top,10);
+            console.log(`${pright} AND ${pcright}`);
+  
+              
+        },10);
+    
     </script>
 </body>
 </html>

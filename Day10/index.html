@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="math">
+<br/>
+<input type="text" name="" id="eng">
+<br/>
+<input type="text" name="" id="urdu">
+<input type="button" name="" value="Show" id="btnShow" />
+
+<script>
+    let btnShow = document.getElementById('btnShow');
+     let math= document.getElementById('math');
+     let eng=document.getElementById('eng');
+     let urdu= document.getElementById('urdu');
+        btnShow.addEventListener("click",function(){
+        let percent = ((parseInt(math.value)+parseInt(eng.value)+parseInt(urdu.value))/300)*100;
+    //   document.write(percent);
+       if(percent>=90){
+           alert("A+");
+       }
+       else if(percent>=80){
+        alert("A");
+       }
+       
+       else if(percent>=79){
+        alert("B");
+       }
+       
+       else if(percent>=59){
+        alert("C");
+       }
+       
+       else if(percent>=33){
+        alert("D");
+       }
+       
+       else if(percent<33){
+        alert("F");
+       }
+
+        });
+
+      
+
+   </script>
+</body>
+</html>
