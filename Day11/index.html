@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Find Book By ID [ 0 - 3]</label>
+    <input type="text" id="txtBook">
+
+    <select name="" id="lstData">
+        <option value="0">Computer Science Using Python</option>
+        <option value="1">Hidden Language of Computer</option>
+        <option value="2">JavaScript: The Good Parts</option>
+        <option value="3">The Elements of Computing Systems</option>
+        <option value="4">The Pragmatic Programmer</option>
+    </select>
+    <h1>No Data</h1>
+    <h2></h2>
+    <img src="" alt="">
+
+    <script>
+        let txtBook = document.getElementById("txtBook");
+      let lstData = document.getElementById("lstData");
+        let bkIndex=3;
+        let h1 = document.querySelector('h1');
+        let h2 = document.querySelector('h2');
+        let books=["Introduction to Computer Science Using Python",
+        "Code: The Hidden Language of Computer Hardware and Software By Charles Petzold",
+        "JavaScript: The Good Parts",
+        " The Elements of Computing Systems: Building a Modern Computer from First Principles",
+        "The Pragmatic Programmer"
+        ];
+        let price=[256.5,150,500,350,750];
+        let coverimg = [];
+
+        lstData.addEventListener("change",function(){
+            bkIndex = parseInt(this.value);
+            h1.textContent = books[bkIndex];
+            h2.innerHTML = `Price :$${price[bkIndex]} `;
+
+
+        });
+        txtBook.addEventListener('change',function () {
+        bkIndex = parseInt(txtBook.value);
+        h1.textContent = books[bkIndex];
+        h2.innerHTML = `Price :$${price[bkIndex]} `;
+          });
+    </script>
+</body>
+</html>
