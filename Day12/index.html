@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1{
+            background-color: gray;
+            padding: 0.5rem;;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAKISTAN</h1>
+        <script>
+            let colorArray = ["red","blue","green","cornflowerblue"];
+            let solongArray=["New Horizon","Beyond Your Imagination","No Comment!","Hmmmm!"];                  
+            let h1 = document.querySelector('h1');
+            setInterval(function(){
+                let colNum = Math.floor(Math.random()* colorArray.length);
+                document.body.style.backgroundColor = colorArray[colNum];
+                // h1.textContent = solongArray[colNum];
+                h1.innerHTML = solongArray[colNum];
+            },2000)
+        </script>
+</body>
+</html>
