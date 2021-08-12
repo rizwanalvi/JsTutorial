@@ -36,9 +36,27 @@
    3. Change Background Color on every 2 sec.
    4. Image Slider - Change Background images on every 2 sec
    4. Bulb on off program using flip-flop circuit. (on-off logic) wiht button control.
-
+# Day 7 Tic-tac-toe Game Dev
+   1. Logic Building Game use Button Event handling and Selection Structure.
+# Day 8 Counter App
+   1. Counter App
 # Day 9 Assignment
    1. JavaScript KeyBoard Testing Application
+# Day 11 Array in JavaScript
+   1. Book Data Store in array.
+   2. Select Book name from list and Show details 
+ 
+ # Day 14 Coding Challenge
+   1. Print numbers from 1 to 10.
+   2. Print the odd numbers less than 100.
+   3. Print the multiplication table with 7.
+   4. Print all the multiplication tables with numbers from 1 to 10.
+   5. Calculate the sum of numbers from 1 to 10.
+   6. Calculate the sum of numbers in an array of numbers. 
+   7. Calculate the average of the numbers in an array of numbers.
+   8. Calculate the sum of even numbers greater than 10 and less than 30. 
+ 
+ 
  <script src="https://kit.fontawesome.com/c637592d13.js" crossorigin="anonymous"></script>
 
 # Donation Kindly Update  images Here
