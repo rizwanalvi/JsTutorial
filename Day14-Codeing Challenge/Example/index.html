@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btnBlue{
+            background-color: royalblue;
+        }
+        .hide{
+            display: none;
+            transition: 4s;
+        }
+        .show{
+            display: inline-block;
+            background-color: olive;
+            padding:  1rem;
+            transition: 4s;
+        }
+        img{
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/men_black.jpg" alt="" style="height: 150px;">
+    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facilis dignissimos, ipsam quas suscipit expedita, officiis iste aspernatur dolorem tempore at provident necessitatibus voluptas, libero neque? Laboriosam deserunt esse est.</p>
+    <input type="button" value="Black" id="btnBlack">
+    <input type="button" value="Blue" id="btnBlue">
+   <script>
+        let btnBlack = document.getElementById('btnBlack');
+        let p = document.querySelector('p');
+        let btnBlue = document.querySelector('#btnBlue');
+        let img = document.querySelector('img');
+        
+        btnBlack.addEventListener("click",function(){
+            img.src = "img/men_black.jpg"
+        });
+        btnBlue.addEventListener("click", ()=>{
+            img.src = "img/men_blue.png"
+
+        });
+        btnBlue.addEventListener('',function(){})
+        img.addEventListener("mouseenter",()=>{
+            p.classList.add('show');
+            p.classList.remove('hide');
+        })
+        img.addEventListener('mouseleave',()=>{
+            p.classList.add('hide');
+            p.classList.remove('show');
+        })
+        
+    </script>
+</body>
+</html>
