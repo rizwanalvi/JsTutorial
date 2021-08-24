@@ -19,3 +19,13 @@ function ShowAlert(){
      return result;
 
 } 
+
+  
+        function NumberSquare(val){
+            let result = val*val;
+            return result;
+        }
+        function WelCome(msg){
+            let message = `Hello Mr. ${msg}`;
+            return message;
+        }
