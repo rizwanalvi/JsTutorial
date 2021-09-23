@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Hide Me</h1>
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnTog">Toogle</button>
+    <div class="jumbotron bg-warning">
+    <p class="lead text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non ipsa qui laborum adipisci consectetur natus, perspiciatis nostrum exercitationem repellendus explicabo, eaque, ea facere incidunt quos corporis quo pariatur vero!
+    </p>
+    <button class="btn btn-success btn-sm">Show</button>
+</div>
+<script>
+    $(function(){
+         //tag selector
+        $('#btnHide').click(function(){
+            $('h1').fadeOut(3000);
+        });
+        $('#btnShow').click(function(){
+            $('h1').fadeIn(3000);
+        });
+        $('#btnTog').click(function(){
+            $('h1').toggle(3000);
+        });
+       
+        $('.btn-success').click(function(){
+        
+            $(this).toggleClass('btn-danger');
+            
+            $('.lead').slideToggle(3000);
+        });
+    });
+</script>
+</body>
+</html>
