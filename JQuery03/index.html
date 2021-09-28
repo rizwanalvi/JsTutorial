@@ -17,7 +17,7 @@
     <input type="text" name="" id="txtData"> <button>Add</button>
 </div>
     <ul class="list-group">
-        <li class="list-group-item bg-secondary text-white">Fruit List</li>
+        <span class="list-group-item bg-secondary text-white">Fruit List</span>
         <li class="list-group-item">Apple</li>
         <li class="list-group-item">Mango</li>
         <li class="list-group-item">Orange</li>
@@ -26,7 +26,11 @@
 
     <script>
         $(function(){
-             
+            $('li').on('click',function(){
+                    //$('li').removeClass('bg-warning');
+                                 $(this).remove();
+                   // $(this).toggleClass('bg-w arning');
+                             });
                 $('button').on('click',function(){
                        let data =$('#txtData').val();
                        $('ul').append(`<li class="list-group-item">${data}</li>`);
