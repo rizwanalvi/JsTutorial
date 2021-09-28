@@ -23,52 +23,21 @@
         <li class="list-group-item">Orange</li>
         <li class="list-group-item">Banana</li>
     </ul>
-    <h1>Cart</h1>
-    <table class="table">
-        <tr>
-            <th>Product Name</th>
-            <th>Product Price</th>
-        </tr>
-    
-    </table>
+
     <script>
         $(function(){
             $('li').on('click',function(){
                     //$('li').removeClass('bg-warning');
-                             //    $(this).remove();
+                                $(this).remove();
                    // $(this).toggleClass('bg-w arning');
-                   $('.table').append(`<tr>
-            <td>${$(this).text()}</td>
-            <td>200</td>
-        </tr>`);
-
-
-        $('tr').on('click',function(){
-
-                $(this).remove();
-        });
-
-
                              });
                 $('button').on('click',function(){
                        let data =$('#txtData').val();
                        $('ul').append(`<li class="list-group-item">${data}</li>`);
                        $('li').on('click',function(){
                     //$('li').removeClass('bg-warning');
-                                // $(this).remove();
+                                 $(this).remove();
                    // $(this).toggleClass('bg-w arning');
-
-                              // $(this).toggleClass('bg-w arning');
-                              $('.table').append(`<tr>
-            <td>${$(this).text()}</td>
-            <td>200</td>
-        </tr>`);
-
-
-        $('tr').on('click',function(){
-
-                $(this).remove();
-        });
                              });
                     });
         
