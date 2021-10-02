@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.js"
+  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/phones/dell-streak-7.0.jpg" alt="" id="imgMain">
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <select name="" id="lstMobile" class="form-control">
+                        <option value="img/phones/dell-streak-7.0.jpg">Mobile 1</option>
+                        <option value="img/phones/dell-streak-7.1.jpg">Mobile 2</option>
+                        <option value="img/phones/dell-streak-7.2.jpg">Mobile 3</option>
+               
+                    </select>
+                </div>
+                <div class="row">
+                    <img src="img/phones/dell-streak-7.0.jpg" alt="" class="img-thumbnail" style="height: 50px;" id="img01">
+                    <img src="img/phones/dell-streak-7.1.jpg" alt="" class="img-thumbnail" style="height: 50px;" id="img02">
+                    <img src="img/phones/dell-streak-7.2.jpg" alt="" class="img-thumbnail" style="height: 50px;" id="img03">
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">Main</li>
+                    <li class="list-group-item">Main</li>
+                    <li class="list-group-item">Main</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        $(function(){
+            $('#lstMobile').on('change',function(){
+                  
+                    $('#imgMain').attr("src",$(this).val());
+            });
+            $('#img01').on("mouseenter",function(){
+                let imgSrc =$(this).attr('src');
+               
+
+                $('#imgMain').attr("src",imgSrc);
+                $('img').removeClass('border-danger');
+                $(this).toggleClass('border-danger');
+            });
+           
+            $('#img02').on("mouseenter",function(){
+                let imgSrc =$(this).attr('src');
+              
+                $('#imgMain').attr("src",imgSrc);
+                $('img').removeClass('border-danger');
+                $(this).toggleClass('border-danger');
+            })
+            $('#img03').on("mouseenter",function(){
+                let imgSrc =$(this).attr('src');
+                $(this).toggleClass('border-danger');
+                $('#imgMain').attr("src",imgSrc);
+                $('img').removeClass('border-danger');
+                $(this).toggleClass('border-danger');
+               
+            })
+            $('li').on("click",function(){
+                $('li').removeClass('bg-warning');
+                $(this).toggleClass('bg-warning');
+
+            });
+        
+            
+        });
+    </script>
+</body>
+</html>
