@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-init="fname='Ahmed Khan';cl='VI'">
+        <h1>{{fname}}</h1>
+        <h3>{{cl}}</h3>
+    </div>
+    <div ng-init="studentlist=['Noman','Kamran','Irfan']">
+        <ul>
+            <li>{{studentlist}}</li>
+            <li>{{studentlist[0]}}</li>
+            <li>{{studentlist[1]}}</li>
+        </ul>
+    </div>
+  <div ng-init='obj={id:1002,name:"Furqan",sem:"VI"}'>
+    <p>{{obj}}</p>
+    <ul>
+        <li>{{obj.id}}</li>
+    </ul>
+  </div>
+    <h3>{{2+2}}</h3>
+    <div ng-init='img="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"'>
+        <img src="{{img}}" alt="">
+    </div>
+
+    
+</body>
+</html>
