@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <input type="text" ng-model="data">
+    <h1>{{data}}</h1>
+    <input type="text" ng-model="data">
+<h2>---------------</h2>
+
+    <div>
+        <input type="text" ng-model="cost">
+        <input type="text" ng-model="quan">
+        <h3>{{cost * quan}}</h3>
+    </div>
+
+    <select name="" id="" ng-model="lst">
+        <option value="Apple">Apple</option>
+        <option value="Orange">Orange</option>
+        <option value="Mango">Mango</option>
+    </select>
+
+    <h3>{{lst}}</h3>
+</body>
+</html>
