@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init="bkObj=[{id:1002,bookname:'Java',price:34.5},
+{id:1001,bookname:'C# Programming',price:45.5},
+{id:1003,bookname:'Html',price:34.5},
+{id:1006,bookname:'Angular Js',price:34.5}]">
+<div class="form-group">
+    <input type="text" name="" id="" class="form-control" ng-model="searchText.bookname">
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+      <tr ng-repeat='x in bkObj | filter : searchText '>
+        <th scope="row">{{x.id}}</th>
+        <td>{{x.bookname | uppercase}}</td>
+        <td>{{x.price | currency:"Rs."}}</td>
+        <td>@mdo</td>
+      </tr>
+    
+</body>
+</html>
