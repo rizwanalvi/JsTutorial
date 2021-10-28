@@ -36,7 +36,9 @@
         <th scope="row">{{x.id}}</th>
         <td>{{x.bookname | uppercase}}</td>
         <td>{{x.price | currency:"Rs."}}</td>
-        <td><input type="checkbox" name="" id="" ng-model='chk'> <h4 ng-show='chk'>OutofStcok</h4></td>
+        <td><input type="checkbox" name="" id="" ng-model='chk'> <h4 ng-show='chk'>
+            <div ng-include="'showstock.html'"></div>
+        </h4></td>
       </tr>
     
 </body>
