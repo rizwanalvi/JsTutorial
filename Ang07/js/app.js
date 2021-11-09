@@ -160,18 +160,15 @@ mApp.controller('MobilesController',function($scope){
 
 })
 
-
 mApp.controller('PhoneController',function($scope,$routeParams){
     $scope.msg = phones.filter(x=>x.id == $routeParams.phoneId);
 
 
 })
-
 mApp.config(['$routeProvider',function($routeProvider){
         $routeProvider.when('/phone',{
             templateUrl :'phone-list.html',
             controller : 'MobilesController'
-
         }).when('/phone/:phoneId',{
 
             templateUrl :'phone-details.html',
