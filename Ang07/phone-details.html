@@ -1,2 +1,22 @@
-<h1>{{msg[0].id}}</h1>
-<img src="{{msg[0].imageUrl}}" alt="">
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        
+        <img src="{{msg[0].imageUrl}}" alt="" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+
+        <ul class="list-group">
+            <li class="list-group-item">{{msg[0].name}}</li>
+            <li class="list-group-item">{{msg[0].name}} </li>
+            <li class="list-group-item">{{msg[0].snippet}} </li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item"><div class="btn-group">
+                <a href="#" class="btn btn-warning btn-sm">Main</a>
+                <button class="btn btn-danger btn-sm">Add To Cart</button>
+            </div></li>
+          </ul>
+    </div>
+</div>

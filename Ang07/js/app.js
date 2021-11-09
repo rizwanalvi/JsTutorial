@@ -154,8 +154,10 @@ let phones = [
     }
 ]
 let mApp = angular.module('mMobile',['ngRoute']);
+let cart =[];
 mApp.controller('MobilesController',function($scope){
     $scope.phones = phones;
+    $scope.cart =[];
 
 
 })
