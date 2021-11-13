@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ="mMod">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body ng-controller="PhoneController">
+<div class="row">
+    <div class="col-md-6 bg-info">
+        <ul ng-repeat="x in Phones">
+            <li class="alert alert-primary">{{x.id}}<button class="btn btn-success btn-sm" ng-click="addToCart($index)">+</button> </li>
+        </ul>
+       
+    </div>
+    <div class="col-md-6 bg-warning">
+        {{cart.length}}
+        <ul ng-repeat="x in cart">
+            <li class="alert alert-primary">{{x.id}}<button class="btn btn-danger btn-sm" ng-click="RemoveFromCart($index)">-</button> </li>
+        </ul>
+    </div>
+</div>
+    
+
+    <script src="js/aap.js"></script>
+</body>
+</html>
